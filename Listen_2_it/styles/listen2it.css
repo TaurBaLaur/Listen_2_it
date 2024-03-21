@@ -1,0 +1,98 @@
+body{
+	background-color: rgb(184, 209, 205);
+	margin-bottom: 1000px
+}
+a{
+	width: 100%;
+}
+button{
+	margin: 30px 0px;
+	padding: 10px 20px;
+	width: 100%;
+	cursor: pointer;
+	border: none;
+	background-color: rgb(60, 180, 115);
+	font-weight: 700;
+}
+button:hover{
+	background-color: rgb(90, 210, 145);
+}
+button:active{
+	background-color: rgb(105, 225, 160);
+}
+th, td {
+	border: 2px solid black;
+	width: 25%; 
+	text-align: center;
+}
+.tbimg{
+	vertical-align:middle;
+	height: 32px;
+}
+.buton{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	flex: 1;
+}
+.top-bar{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.music{
+	display: grid;
+	justify-content: center;
+	text-align: center;
+	grid-auto-rows: 1fr;
+	border:1px solid black;
+}
+.artist{
+	display: flex; flex-direction: column;
+	border: 1px solid black;
+}
+.nume{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid black;
+}
+.imagine{
+	height: 100%; display: flex; justify-content: center; align-items: center;
+}
+.poza{
+	width: 100%;
+}
+@media (max-width: 600px) {
+	.tbimg{
+		height: 32px;
+		width: 32px;
+	}
+	span{
+		display: none;
+	}
+	.top-bar{
+		position: fixed;
+		width: 100%;
+		bottom: -25px;
+		left: 0;
+	}		
+	.music{
+		grid-template-columns: 1fr;
+	}
+}
+@media (min-width: 601px), (max-width: 900){
+	.tbimg {
+		display: none;
+	}
+	.music{
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+}
+@media (min-width: 901px) {
+	.tbimg {
+		display: none;
+	}
+	.music{
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
+}
